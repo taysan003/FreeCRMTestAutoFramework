@@ -145,6 +145,16 @@
             <artifactId>selenium-firefox-driver</artifactId>
             <version>3.13.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>3.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>9.4.10.v20180503</version>
+        </dependency>
     </dependencies>
 
 
