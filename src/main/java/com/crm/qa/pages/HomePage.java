@@ -10,7 +10,7 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "//td[contains(text(), 'Andrei Kastsiuchenka')]")
     WebElement userNameLabel;
 
-    @FindBy(xpath = "//a [@title='Contacts' and contains(text(), 'Contacts')]")
+    @FindBy(xpath = "//li/a [@title='Contacts' and contains(text(), 'Contacts')]")
     WebElement contactsLink;
 
     @FindBy(xpath = "//a[contains(text(), 'Deals')]")
@@ -20,14 +20,14 @@ public class HomePage extends TestBase {
     WebElement taskLink;
 
     //initializing of page objects
+
     public HomePage() {
         PageFactory.initElements(driver, this); //initialization home class by driver and all FindBy elements
     }
 
     public String verifyHomePageTitle(){
-       return driver.getTitle();
+        return driver.getTitle();
     }
-
     public boolean verifyCorrectUserName(){
       return userNameLabel.isDisplayed();
 
