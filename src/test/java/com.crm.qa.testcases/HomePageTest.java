@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import com.crm.qa.base.TestBase;
+import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
@@ -14,6 +15,7 @@ public class HomePageTest extends TestBase {
     LoginPage loginPage;
     HomePage homePage;
     TestUtil testUtil;
+    ContactsPage contactsPage;
 
     public HomePageTest() {
         super(); // colling constructor TestBase class
@@ -27,6 +29,7 @@ public class HomePageTest extends TestBase {
     public void setUp(){
         initialization();  //colling driver and go to login page
         testUtil = new TestUtil();
+        contactsPage = new ContactsPage();
         loginPage = new LoginPage(); // fill in specified field necessary data login and password
         homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
     }
@@ -40,7 +43,14 @@ public class HomePageTest extends TestBase {
     @Test(priority = 2)
     public void verifyCorrectUserName(){
         testUtil.switchToFrame();
-       Assert.assertTrue(homePage.verifyCorrectUserName());
+        Assert.assertTrue(homePage.verifyCorrectUserName());
+    }
+
+    @Test(priority = 3)
+    public void verifyContactsLink(){
+        testUtil.switchToFrame();
+        contactsPage = homePage.clickOnContactsLink();
+
     }
 
 
