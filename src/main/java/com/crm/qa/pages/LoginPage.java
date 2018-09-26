@@ -15,7 +15,7 @@ public class LoginPage extends TestBase {
     @FindBy(name ="password") //discribe locator name = password from webpage
     WebElement password;      // dont need driver.findelenent By xpath
 
-    @FindBy(xpath = "//input [@type ='submit' and @class ='btn btn-small' ]")
+    @FindBy(xpath = "//input [@type ='submit']")
     WebElement loginBtn;
 
     @FindBy(xpath = "//div[@id='navbar-collapse']/ul[@class='nav navbar-nav navbar-right']//font[.='Sign Up']")
@@ -39,9 +39,11 @@ public class LoginPage extends TestBase {
     }
 
     public HomePage login(String un, String pwd){
+        username.clear();
         username.sendKeys(un);
+        password.clear();
         password.sendKeys(pwd);
-        loginBtn.click();
+        loginBtn.submit();
 
         return new HomePage();
     }

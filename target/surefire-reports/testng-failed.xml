@@ -7,9 +7,16 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyUserName"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
