@@ -8,7 +8,9 @@ import com.crm.qa.util.TestUtil;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 
 public class ContactsPageTest extends TestBase {
 
@@ -16,6 +18,7 @@ public class ContactsPageTest extends TestBase {
     HomePage homePage;
     ContactsPage contactsPage;
     TestUtil testUtil;
+    String sheetName = "contacts";
 
 
     public ContactsPageTest()
@@ -46,6 +49,21 @@ public class ContactsPageTest extends TestBase {
 
         contactsPage.selectContacts();
     }
+
+    @DataProvider
+    public Object[][] getCRMTestData(){
+        return TestUtil.getTestData(sheetName);
+    }
+
+
+
+    @Test(priority = 3, dataProvider = "getCRMTestData")
+    public void validateCreateNewContact(String title, String ftName, String ltName, String comp){
+        homePage.clickOnNewContactsLink();
+      //  contactsPage.createNewContact("Mr.", "Andrei", "Ivanov", "Google");
+        contactsPage.createNewContact(title, ftName, ltName, comp);
+    }
+
 
     @AfterMethod
     public void tearDown (){
