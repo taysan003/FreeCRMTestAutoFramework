@@ -60,13 +60,13 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
         System.out.println("Navigated forward to next page");
     }
 
-    public void onException(Throwable error, WebDriver driver) {
+    public void onException(Throwable error, WebDriver driver) { //create a screenshot of every exception
         System.out.println("Exception occured: " + error);
-     /*   try {
+        try {
             TestUtil.takeScreenshotAtEndOfTest();
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
     }
 
     public <X> void beforeGetScreenshotAs(OutputType<X> outputType) {
