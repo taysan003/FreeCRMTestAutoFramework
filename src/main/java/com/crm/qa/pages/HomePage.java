@@ -3,12 +3,14 @@ package com.crm.qa.pages;
 import com.crm.qa.base.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends TestBase {
 
     @FindBy(xpath = "//td[contains(text(), 'Andrei Kastsiuchenka')]")
+    @CacheLookup //caching user name from lable and saving in a memory
     WebElement userNameLabel;
 
     @FindBy(xpath = "//li/a [@title='Contacts' and contains(text(), 'Contacts')]")
