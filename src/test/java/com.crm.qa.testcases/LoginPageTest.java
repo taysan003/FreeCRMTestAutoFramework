@@ -8,6 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
+
 public class LoginPageTest extends TestBase {
 
     LoginPage loginPage;
@@ -18,15 +20,15 @@ public class LoginPageTest extends TestBase {
     }
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() throws MalformedURLException {
         initialization();  //colling driver and go to login page
-
         loginPage = new LoginPage(); // fill in specified field necessary data login and password
     }
 
     @Test(priority = 1)
     public void loginPageTitleTest(){
         String title = loginPage.validateLoginPageTitle();
+        log.info("login page title is ---> " + title);
         Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
     }
 

@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
+
 
 public class ContactsPageTest extends TestBase {
 
@@ -27,7 +29,7 @@ public class ContactsPageTest extends TestBase {
     }
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() throws MalformedURLException {
         initialization();  //colling driver and go to login page
         testUtil = new TestUtil();
         contactsPage = new ContactsPage();
