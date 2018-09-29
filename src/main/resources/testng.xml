@@ -4,11 +4,26 @@
     <listeners>
         <listener class-name = "com.qa.extentreportlistener.ExtentReporterNG"/>
     </listeners>
-    <test name="FeeCRM Test Cases" >
+    <parameter name="browser" value="chrome"/>
+    <test name="Test Chrome" >
         <classes>
            <!-- <class name="com.crm.qa.testcases.ContactsPageTest"/>
             <class name="com.crm.qa.testcases.HomePageTest"/>-->
             <class name="com.crm.qa.testcases.LoginPageTest"/>
         </classes>
     </test>
+    <!--<parameter name="browser" value="firefox"/>
+    <test name="Test-FF" >
+        <classes>
+
+            <class name="com.crm.qa.testcases.LoginPageTest"/>
+        </classes>
+    </test>
+    <parameter name="browser" value="IE"/>
+    <test name="Test-IE" >
+        <classes>
+
+            <class name="com.crm.qa.testcases.LoginPageTest"/>
+        </classes>
+    </test>-->
 </suite>

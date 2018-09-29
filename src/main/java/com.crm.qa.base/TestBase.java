@@ -7,9 +7,11 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.annotations.Parameters;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -42,8 +44,10 @@ public class TestBase {
 
     }
 
+   // @Parameters({"browser"})
     public static void initialization () throws MalformedURLException {
-      String browserName = prop.getProperty("browser");
+     String browserName = prop.getProperty("browser");
+
 
         if (browserName.equals("chrome")){
             capabilities = DesiredCapabilities.chrome();
@@ -52,9 +56,17 @@ public class TestBase {
            // driver = new ChromeDriver();
             log.info("launching Chrome browser");
         } else if (browserName.equals("FF")){
-            driver = new FirefoxDriver();
+            //driver = new FirefoxDriver();
+            capabilities = DesiredCapabilities.firefox();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
             log.info("launching FF browser");
+        } else if (browserName.equals("IE")){
+           // driver = new InternetExplorerDriver();
+            capabilities = DesiredCapabilities.internetExplorer();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            log.info("launching IE browser");
         }
+
 
         e_driver = new EventFiringWebDriver(driver);
         // Now create object of EventListerHandler to register it with EventFiringWebDriver
