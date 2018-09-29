@@ -6,10 +6,7 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 
@@ -29,8 +26,9 @@ public class ContactsPageTest extends TestBase {
     }
 
     @BeforeMethod
-    public void setUp() throws MalformedURLException {
-        initialization();  //colling driver and go to login page
+    @Parameters({"browser"})
+    public void setUp(String browser) throws MalformedURLException {
+        initialization(browser);  //colling driver and go to login page
         testUtil = new TestUtil();
         contactsPage = new ContactsPage();
         loginPage = new LoginPage(); // fill in specified field necessary data login and password

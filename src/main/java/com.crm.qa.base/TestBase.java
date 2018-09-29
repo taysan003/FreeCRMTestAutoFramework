@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -36,10 +37,10 @@ public class TestBase {
 
         try {
 
-                prop = new Properties();
-                FileInputStream ip = new FileInputStream("G:\\SeleniumProjects\\FreeCRMTestFramework\\src\\main\\java\\com.crm.qa.config\\config.properties");
-                prop.load(ip);
-                log.info("getting data from config file");
+        prop = new Properties();
+        FileInputStream ip = new FileInputStream("G:\\SeleniumProjects\\FreeCRMTestFramework\\src\\main\\java\\com.crm.qa.config\\config.properties");
+        prop.load(ip);
+        log.info("getting data from config file");
 
 
         } catch (FileNotFoundException e) {
@@ -50,18 +51,18 @@ public class TestBase {
 
     }
 
-   // @Parameters({"browser"})
-    public static void initialization () throws MalformedURLException {
-     String browserName = prop.getProperty("browser");
 
+    public static void initialization (String browser) throws MalformedURLException {
+     //String browserName = prop.getProperty("browser");
+        String browserName = browser;
 
         if (browserName.equals("chrome")){
             /*capabilities = DesiredCapabilities.chrome();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
             //connection to hub
-           driver = new ChromeDriver();
+            driver = new ChromeDriver();
             log.info("launching Chrome browser");
-        } else if (browserName.equals("FF")){
+        } else if (browserName.equals("firefox")){
             driver = new FirefoxDriver();
             /*capabilities = DesiredCapabilities.firefox();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
@@ -71,6 +72,11 @@ public class TestBase {
             /*capabilities = DesiredCapabilities.internetExplorer();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
             log.info("launching IE browser");
+        } else if (browserName.equals("EDGE")){
+            driver = new EdgeDriver();
+            /*capabilities = DesiredCapabilities.internetExplorer();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
+            log.info("launching EDGE browser");
         }
 
 

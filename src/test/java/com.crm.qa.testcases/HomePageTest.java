@@ -8,6 +8,7 @@ import com.crm.qa.util.TestUtil;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
@@ -28,8 +29,9 @@ public class HomePageTest extends TestBase {
     //@test - execute test case
     // after each test case --- close the browser
     @BeforeMethod
-    public void setUp() throws MalformedURLException {
-        initialization();  //colling driver and go to login page
+    @Parameters({"browser"})
+    public void setUp(String browser) throws MalformedURLException {
+        initialization(browser);  //colling driver and go to login page
         testUtil = new TestUtil();
         contactsPage = new ContactsPage();
         loginPage = new LoginPage(); // fill in specified field necessary data login and password
