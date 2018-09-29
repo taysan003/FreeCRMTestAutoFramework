@@ -21,6 +21,8 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+
+
 public class TestBase {
     public static DesiredCapabilities capabilities;
     public static WebDriver driver;
@@ -29,13 +31,17 @@ public class TestBase {
     public static WebEventListener eventListener;
     public static Logger log = Logger.getLogger(TestBase.class);
 
+
     public TestBase(){
 
         try {
-            prop = new Properties();
-            FileInputStream ip = new FileInputStream("G:\\SeleniumProjects\\FreeCRMTestFramework\\src\\main\\java\\com.crm.qa.config\\config.properties");
-            prop.load(ip);
-            log.info("getting data from config file");
+
+                prop = new Properties();
+                FileInputStream ip = new FileInputStream("G:\\SeleniumProjects\\FreeCRMTestFramework\\src\\main\\java\\com.crm.qa.config\\config.properties");
+                prop.load(ip);
+                log.info("getting data from config file");
+
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -50,20 +56,20 @@ public class TestBase {
 
 
         if (browserName.equals("chrome")){
-            capabilities = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            /*capabilities = DesiredCapabilities.chrome();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
             //connection to hub
-           // driver = new ChromeDriver();
+           driver = new ChromeDriver();
             log.info("launching Chrome browser");
         } else if (browserName.equals("FF")){
-            //driver = new FirefoxDriver();
-            capabilities = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            driver = new FirefoxDriver();
+            /*capabilities = DesiredCapabilities.firefox();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
             log.info("launching FF browser");
         } else if (browserName.equals("IE")){
-           // driver = new InternetExplorerDriver();
-            capabilities = DesiredCapabilities.internetExplorer();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+           driver = new InternetExplorerDriver();
+            /*capabilities = DesiredCapabilities.internetExplorer();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
             log.info("launching IE browser");
         }
 
