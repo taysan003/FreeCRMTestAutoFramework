@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="17988bdc-625e-4fe9-83c7-52af045c967e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Extent.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -108,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="61" selection-start-line="10" selection-start-column="10" selection-end-line="11" selection-end-column="61" />
+            <state relative-caret-position="360">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -249,7 +245,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="158" />
     <option name="y" value="-14" />
     <option name="width" value="1676" />
@@ -386,7 +382,7 @@
   <component name="PropertiesComponent">
     <property name="add_unversioned_files" value="$PROJECT_DIR$/application.log&#10;true&#10;G:/SeleniumProjects/FreeCRMTestFramework/screenshots/1538024593568.png" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538230594408" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538234744755" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DDFramework" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -555,9 +551,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.09.29 at 01h 27m 35s.xml">
-      <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.09.29 at 09h 12m 42s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -585,6 +578,9 @@
     <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.09.29 at 10h 14m 44s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.09.29 at 10h 16m 56s.xml">
+      <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -596,8 +592,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.862256" visible="true" weight="0.21215352" />
       <window_info id="Structure" order="1" sideWeight="0.1434263" side_tool="true" weight="0.24381188" />
@@ -608,12 +603,12 @@
       <window_info id="Favorites" order="6" sideWeight="0.13774404" side_tool="true" weight="0.21002132" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.324295" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.324295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.485623" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.318872" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.318872" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.21908894" />
@@ -852,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="61" selection-start-line="10" selection-start-column="10" selection-end-line="11" selection-end-column="61" />
+        <state relative-caret-position="360">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

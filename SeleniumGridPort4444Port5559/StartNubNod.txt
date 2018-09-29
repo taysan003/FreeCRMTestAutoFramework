@@ -1,0 +1,37 @@
+ Start hub
+java -jar selenium-server-standalone-3.14.0.jar -role hub
+
+ Start hub with max sessions
+java -jar selenium-server-standalone-3.14.0.jar -role hub -maxSession 10     --- it means will execute only 10 test cases in parallel 
+    
+
+
+Strart node
+java -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.1.18:4444/grid/register -port 5559
+Stop cntrl+c   in window where I started the node  and we can restart our grid in the other window  java -jar selenium-server-standalone-3.14.0.jar -role hub
+
+Start the other nod but need to use the other port 5560
+java -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.1.18:4444/grid/register/ -port 5560 -browser browserName=firefox,maxInstances=3
+ -browser browserName=chrome,maxInstances=3 -browser browserName=iexplore,maxInstances=3
+
+
+Max instances
+java -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.1.18:4444/grid/register/ -port 5559 -browser browserName=firefox,maxInstances=5
+
+java -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.1.18:4444/grid/register/ -port 5559 -browser browserName=firefox,maxInstances=3
+ -browser browserName=chrome,maxInstances=3 -browser browserName=iexplore,maxInstances=3
+
+Confirguretion with Chrome deriver
+Start hub
+tern off all nodes
+in new terminal 
+java -Dwebdriver.chrome.driver=c:\webdrivers\chromedriver.exe -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.1.18:4444/grid/register/ 
+-port 5559 -browser browserName=chrome
+
+Confirguretion with Chrome and IE deriver
+java -Dwebdriver.chrome.driver=c:\webdrivers\chromedriver.exe -Dwebdriver.ie.driver=c:\webdrivers\IEDriverServer.exe -jar selenium-server-standalone-3.14.0.jar -role 
+webdriver -hub http://192.168.1.18:4444/grid/register/ -port 5559 -browser browserName=chrome -browser browserName=iexplore
+
+
+java -Dwebdriver.chrome.driver=c:\webdrivers\chromedriver.exe -Dwebdriver.ie.driver=c:\webdrivers\IEDriverServer.exe -Dwebdriver.ie.driver=c:\webdrivers\geckodriver.exe -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.1.18:4444/grid/register/ -port 5559 -browser browserName=chrome -browser browserName=iexplore,maxInstances=3 -browser browserName=chrome,maxInstances=3 -browser browserName=firefox,maxInstances=3
+
