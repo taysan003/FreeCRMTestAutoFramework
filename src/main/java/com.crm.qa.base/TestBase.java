@@ -7,6 +7,7 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -34,6 +35,7 @@ public class TestBase {
     public static WebEventListener eventListener;
     public static Logger log = Logger.getLogger(TestBase.class);
     public static WebDriverWait wait;
+    public static ChromeOptions options;
 
 
 
@@ -64,6 +66,9 @@ public class TestBase {
                 /*capabilities = DesiredCapabilities.chrome();
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
                 //connection to hub
+                options = new ChromeOptions();
+                options.addArguments("disable-infobars");
+                options.addArguments("--disable-notifications");
                 driver = new ChromeDriver();
                 log.info("launching Chrome browser");
             } else if (browserName.equals("firefox")){
@@ -93,7 +98,7 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+       // driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 25);
 
         driver.get(prop.getProperty("url"));

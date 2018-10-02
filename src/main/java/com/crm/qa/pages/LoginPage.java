@@ -1,15 +1,13 @@
 package com.crm.qa.pages;
 
 import com.crm.qa.base.TestBase;
-import javafx.scene.web.WebEvent;
-import org.eclipse.jetty.util.annotation.Name;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends TestBase {
 
@@ -39,8 +37,20 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//li/a [contains(text(), 'Pricing')]")
     WebElement pricingLink;
 
-    @FindBy(xpath = "//div[@class='row']/div[1]/a[@role='button']")
-    WebElement signUpButton;
+    @FindBy(xpath = "//section[@id='services']//div[@class='row']/div[1]/a[@role='button']")
+    WebElement signUpButton_1;
+
+    @FindBy(xpath = "//section[@id='services']//div[@class='row']/div[2]/a[@role='button']")
+    WebElement signUpButton_2;
+
+    @FindBy(xpath = "//section[@id='services']//div[@class='row']/div[3]/a[@role='button']")
+    WebElement signUpButton_3;
+
+    @FindBy(xpath = "//section[@id='services']//div[@class='row']/div[4]/a[@role='button']")
+    WebElement signUpButton_4;
+
+   /* @FindBy(xpath = "//i[@class='fa fa-users skrollable skrollable-after']")
+    WebElement crmContactsLogo;*/
 
     //initializing of page objects
     public LoginPage() {
@@ -93,13 +103,59 @@ public class LoginPage extends TestBase {
         return new PricingPage();
     }
 
-    public SignUpPage clickOnSignUpButton(){
+    public SignUpPage clickOnSignUpButton_1(){
 
-       Actions act = new Actions(driver);
-        act.moveToElement(signUpButton).perform();
-        wait.until(ExpectedConditions.elementToBeClickable(signUpButton)).click();
+       /* Actions act = new Actions(driver);
+        act.moveToElement(signUpButton_1).perform();
+        wait.until(ExpectedConditions.visibilityOf(signUpButton_1)).submit();*/
+       // signUpButton_1.click();
 
-        //signUpButton.click();
+
+      // WebElement element=driver.findElement(By.xpath("//section[@id='services']//div[@class='row']/div[1]/a[@role='button']"));
+        JavascriptExecutor ex=(JavascriptExecutor)driver;
+        ex.executeScript("arguments[0].click()", signUpButton_1);
+
         return new SignUpPage();
     }
+
+    public SignUpPage clickOnSignUpButton_2(){
+
+        /*Actions act = new Actions(driver);
+        act.moveToElement(signUpButton_2).perform();
+       // wait.until(ExpectedConditions.elementToBeClickable(signUpButton_2)).submit();
+        signUpButton_2.click();*/
+
+        JavascriptExecutor ex=(JavascriptExecutor)driver;
+        ex.executeScript("arguments[0].click()", signUpButton_2);
+        return new SignUpPage();
+
+    }
+
+    public SignUpPage clickOnSignUpButton_3(){
+
+       /* Actions act = new Actions(driver);
+        act.moveToElement(signUpButton_3).perform();
+       // wait.until(ExpectedConditions.elementToBeClickable(signUpButton_3)).submit();
+        signUpButton_3.click();*/
+
+        JavascriptExecutor ex=(JavascriptExecutor)driver;
+        ex.executeScript("arguments[0].click()", signUpButton_3);
+        return new SignUpPage();
+    }
+
+    public SignUpPage clickOnSignUpButton_4(){
+
+        /*Actions act = new Actions(driver);
+        act.moveToElement(signUpButton_4).perform();
+       // wait.until(ExpectedConditions.elementToBeClickable(signUpButton_4)).submit();
+        signUpButton_4.click();*/
+
+        JavascriptExecutor ex=(JavascriptExecutor)driver;
+        ex.executeScript("arguments[0].click()", signUpButton_4);
+        return new SignUpPage();
+    }
+
+   /* public boolean validateCRMContactsLogo(){
+        return crmContactsLogo.isDisplayed();
+    }*/
 }

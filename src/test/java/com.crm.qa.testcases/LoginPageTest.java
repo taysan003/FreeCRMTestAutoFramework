@@ -48,9 +48,30 @@ public class LoginPageTest extends TestBase {
     }
 
     @Test (priority = 4)
-    public void verifySignUpButton(){
-        signUpPage = loginPage.clickOnSignUpButton();
+    public void verifySignUpButton_1(){
+        signUpPage = loginPage.clickOnSignUpButton_1();
     }
+
+    @Test (priority = 5)
+    public void verifySignUpButton_2(){
+        signUpPage = loginPage.clickOnSignUpButton_2();
+    }
+
+    @Test (priority = 6)
+    public void verifySignUpButton_3(){
+        signUpPage = loginPage.clickOnSignUpButton_3();
+    }
+
+    @Test (priority = 7)
+    public void verifySignUpButton_4(){
+        signUpPage = loginPage.clickOnSignUpButton_4();
+    }
+
+   /* @Test (priority = 8)
+    public void crmContactsLogoTest(){
+        boolean flag =loginPage.validateCRMContactsLogo();
+        Assert.assertTrue(flag);
+    }*/
 
    /* @Test(priority = 4)
     public void verifyFeaturesLink(){
