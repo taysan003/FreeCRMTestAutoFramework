@@ -67,11 +67,11 @@ public class LoginPageTest extends TestBase {
         signUpPage = loginPage.clickOnSignUpButton_4();
     }
 
-   /* @Test (priority = 8)
+    @Test (priority = 8)
     public void crmContactsLogoTest(){
         boolean flag =loginPage.validateCRMContactsLogo();
         Assert.assertTrue(flag);
-    }*/
+    }
 
    /* @Test(priority = 4)
     public void verifyFeaturesLink(){

@@ -36,6 +36,7 @@ public class TestBase {
     public static Logger log = Logger.getLogger(TestBase.class);
     public static WebDriverWait wait;
     public static ChromeOptions options;
+    public static WebElement element;
 
 
 

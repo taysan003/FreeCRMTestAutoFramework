@@ -3,6 +3,7 @@ package com.crm.qa.pages;
 import com.crm.qa.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -49,8 +50,8 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//section[@id='services']//div[@class='row']/div[4]/a[@role='button']")
     WebElement signUpButton_4;
 
-   /* @FindBy(xpath = "//i[@class='fa fa-users skrollable skrollable-after']")
-    WebElement crmContactsLogo;*/
+    @FindBy(xpath = "//i[@class='fa fa-users skrollable skrollable-after']")
+    WebElement crmContactsLogo;
 
     //initializing of page objects
     public LoginPage() {
@@ -105,13 +106,6 @@ public class LoginPage extends TestBase {
 
     public SignUpPage clickOnSignUpButton_1(){
 
-       /* Actions act = new Actions(driver);
-        act.moveToElement(signUpButton_1).perform();
-        wait.until(ExpectedConditions.visibilityOf(signUpButton_1)).submit();*/
-       // signUpButton_1.click();
-
-
-      // WebElement element=driver.findElement(By.xpath("//section[@id='services']//div[@class='row']/div[1]/a[@role='button']"));
         JavascriptExecutor ex=(JavascriptExecutor)driver;
         ex.executeScript("arguments[0].click()", signUpButton_1);
 
@@ -119,11 +113,6 @@ public class LoginPage extends TestBase {
     }
 
     public SignUpPage clickOnSignUpButton_2(){
-
-        /*Actions act = new Actions(driver);
-        act.moveToElement(signUpButton_2).perform();
-       // wait.until(ExpectedConditions.elementToBeClickable(signUpButton_2)).submit();
-        signUpButton_2.click();*/
 
         JavascriptExecutor ex=(JavascriptExecutor)driver;
         ex.executeScript("arguments[0].click()", signUpButton_2);
@@ -133,11 +122,6 @@ public class LoginPage extends TestBase {
 
     public SignUpPage clickOnSignUpButton_3(){
 
-       /* Actions act = new Actions(driver);
-        act.moveToElement(signUpButton_3).perform();
-       // wait.until(ExpectedConditions.elementToBeClickable(signUpButton_3)).submit();
-        signUpButton_3.click();*/
-
         JavascriptExecutor ex=(JavascriptExecutor)driver;
         ex.executeScript("arguments[0].click()", signUpButton_3);
         return new SignUpPage();
@@ -145,17 +129,19 @@ public class LoginPage extends TestBase {
 
     public SignUpPage clickOnSignUpButton_4(){
 
-        /*Actions act = new Actions(driver);
-        act.moveToElement(signUpButton_4).perform();
-       // wait.until(ExpectedConditions.elementToBeClickable(signUpButton_4)).submit();
-        signUpButton_4.click();*/
-
         JavascriptExecutor ex=(JavascriptExecutor)driver;
         ex.executeScript("arguments[0].click()", signUpButton_4);
         return new SignUpPage();
     }
 
-   /* public boolean validateCRMContactsLogo(){
-        return crmContactsLogo.isDisplayed();
-    }*/
+    public boolean validateCRMContactsLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)");
+
+        if (crmContactsLogo.isDisplayed())
+            return true;
+        else
+            return false;
+    }
 }
