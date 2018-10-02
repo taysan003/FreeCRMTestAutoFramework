@@ -8,20 +8,21 @@
     <test name="Test-Chrome" >
         <parameter name="browser" value="chrome"/>
         <classes>
-          <!--  <class name="com.crm.qa.testcases.ContactsPageTest"/>-->
-            <class name="com.crm.qa.testcases.HomePageTest"/>
             <class name="com.crm.qa.testcases.LoginPageTest"/>
+           <!-- <class name="com.crm.qa.testcases.ContactsPageTest"/>
+            <class name="com.crm.qa.testcases.HomePageTest"/>-->
+
         </classes>
     </test>
 
-    <test name="Test-FF" >
+   <!-- <test name="Test-FF" >
         <parameter name="browser" value="firefox"/>
         <classes>
-           <!-- <class name="com.crm.qa.testcases.ContactsPageTest"/>
-            <class name="com.crm.qa.testcases.HomePageTest"/>-->
+           <class name="com.crm.qa.testcases.ContactsPageTest"/>
+            <class name="com.crm.qa.testcases.HomePageTest"/>&ndash;&gt;
             <class name="com.crm.qa.testcases.LoginPageTest"/>
         </classes>
-    </test>
+    </test>-->
     <!--<test name="Test-IE" >
          <parameter name="browser" value="IE"/>
          <classes>

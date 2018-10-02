@@ -1,12 +1,18 @@
 package com.crm.qa.pages;
 
 import com.crm.qa.base.TestBase;
+import javafx.scene.web.WebEvent;
 import org.eclipse.jetty.util.annotation.Name;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends TestBase {
+
 
     //Page Factory - OR
     @FindBy(name ="username") //discribe locator name = username from webpage
@@ -23,6 +29,9 @@ public class LoginPage extends TestBase {
 
     @FindBy(xpath = "//img [@class = 'img-responsive' and @alt = 'free crm logo']")
     WebElement crmLogo;
+
+    @FindBy(xpath = "//div[@id='navbar-collapse']/ul[@class='nav navbar-nav navbar-right']//a[@href='https://www.freecrm.com/features.html']")
+    WebElement featuresLink;
 
     //initializing of page objects
     public LoginPage() {
@@ -46,5 +55,18 @@ public class LoginPage extends TestBase {
         loginBtn.submit();
 
         return new HomePage();
+    }
+
+    public FeaturesPage clickOnFeaturesLink(){
+        //wait.until(ExpectedConditions.elementToBeClickable(featuresLink)).click();
+
+
+
+        Actions act = new Actions(driver);
+        act.moveToElement(featuresLink).perform();
+        wait.until(ExpectedConditions.elementToBeClickable(featuresLink)).click();
+
+
+        return new FeaturesPage();
     }
 }

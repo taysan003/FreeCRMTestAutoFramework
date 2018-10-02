@@ -1,4 +1,6 @@
 package com.crm.qa.pages;
 
-public class CustomresPage {
+import com.crm.qa.base.TestBase;
+
+public class CustomresPage extends TestBase {
 }

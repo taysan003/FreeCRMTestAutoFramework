@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import com.crm.qa.base.TestBase;
+import com.crm.qa.pages.FeaturesPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import org.testng.Assert;
@@ -15,6 +16,7 @@ public class LoginPageTest extends TestBase {
 
     LoginPage loginPage;
     HomePage homePage;
+    FeaturesPage featuresPage;
 
     public LoginPageTest() {
         super(); // colling constructor TestBase class
@@ -43,6 +45,12 @@ public class LoginPageTest extends TestBase {
     @Test (priority = 3)
     public void loginTest(){
         homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+    }
+
+    @Test(priority = 4)
+    public void verifyFeaturesLink(){
+        featuresPage = loginPage.clickOnFeaturesLink();
+
     }
 
     @AfterMethod
