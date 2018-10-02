@@ -55,8 +55,6 @@ public class ContactsPageTest extends TestBase {
         return TestUtil.getTestData(sheetName);
     }
 
-
-
     @Test(priority = 3, dataProvider = "getCRMTestData")
     public void validateCreateNewContact(String title, String ftName, String ltName, String comp){
         homePage.clickOnNewContactsLink();
@@ -64,9 +62,9 @@ public class ContactsPageTest extends TestBase {
         contactsPage.createNewContact(title, ftName, ltName, comp);
     }
 
-
     @AfterMethod
     public void tearDown (){
-        driver.quit();
+        driver.quit(); //closing all browsers, close - close only one specifed browser
+        driver=null;
     }
 }

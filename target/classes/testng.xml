@@ -8,7 +8,7 @@
     <test name="Test-Chrome" >
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.crm.qa.testcases.ContactsPageTest"/>
+          <!--  <class name="com.crm.qa.testcases.ContactsPageTest"/>-->
             <class name="com.crm.qa.testcases.HomePageTest"/>
             <class name="com.crm.qa.testcases.LoginPageTest"/>
         </classes>
@@ -17,12 +17,12 @@
     <test name="Test-FF" >
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.crm.qa.testcases.ContactsPageTest"/>
-            <class name="com.crm.qa.testcases.HomePageTest"/>
+           <!-- <class name="com.crm.qa.testcases.ContactsPageTest"/>
+            <class name="com.crm.qa.testcases.HomePageTest"/>-->
             <class name="com.crm.qa.testcases.LoginPageTest"/>
         </classes>
     </test>
-    <test name="Test-IE" >
+    <!--<test name="Test-IE" >
          <parameter name="browser" value="IE"/>
          <classes>
              <class name="com.crm.qa.testcases.ContactsPageTest"/>
@@ -37,5 +37,5 @@
              <class name="com.crm.qa.testcases.HomePageTest"/>
              <class name="com.crm.qa.testcases.LoginPageTest"/>
          </classes>
-     </test>
+     </test>-->
 </suite>

@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
     public static DesiredCapabilities capabilities;
-    public static WebDriver driver;
+    public static WebDriver driver = null;
     public static Properties prop;
     public static EventFiringWebDriver e_driver;
     public static WebEventListener eventListener;
@@ -51,34 +51,34 @@ public class TestBase {
 
     }
 
-
     public static void initialization (String browser) throws MalformedURLException {
      //String browserName = prop.getProperty("browser");
+        //singelton patern
         String browserName = browser;
-
-        if (browserName.equals("chrome")){
-            /*capabilities = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
-            //connection to hub
-            driver = new ChromeDriver();
-            log.info("launching Chrome browser");
-        } else if (browserName.equals("firefox")){
-            driver = new FirefoxDriver();
-            /*capabilities = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
-            log.info("launching FF browser");
-        } else if (browserName.equals("IE")){
-           driver = new InternetExplorerDriver();
-            /*capabilities = DesiredCapabilities.internetExplorer();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
-            log.info("launching IE browser");
-        } else if (browserName.equals("EDGE")){
-            driver = new EdgeDriver();
-            /*capabilities = DesiredCapabilities.internetExplorer();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
-            log.info("launching EDGE browser");
+        if (driver==null){
+            if (browserName.equals("chrome")){
+                /*capabilities = DesiredCapabilities.chrome();
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
+                //connection to hub
+                driver = new ChromeDriver();
+                log.info("launching Chrome browser");
+            } else if (browserName.equals("firefox")){
+                driver = new FirefoxDriver();
+                /*capabilities = DesiredCapabilities.firefox();
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
+                log.info("launching FF browser");
+            } else if (browserName.equals("IE")){
+                driver = new InternetExplorerDriver();
+                /*capabilities = DesiredCapabilities.internetExplorer();
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
+                log.info("launching IE browser");
+            } else if (browserName.equals("EDGE")){
+                driver = new EdgeDriver();
+                /*capabilities = DesiredCapabilities.internetExplorer();
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
+                log.info("launching EDGE browser");
+            }
         }
-
 
         e_driver = new EventFiringWebDriver(driver);
         // Now create object of EventListerHandler to register it with EventFiringWebDriver
