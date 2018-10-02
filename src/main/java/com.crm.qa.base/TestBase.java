@@ -94,7 +94,7 @@ public class TestBase {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 20);
+        wait = new WebDriverWait(driver, 25);
 
         driver.get(prop.getProperty("url"));
         log.info("enetering application URL");

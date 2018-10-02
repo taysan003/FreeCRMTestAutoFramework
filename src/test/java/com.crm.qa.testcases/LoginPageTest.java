@@ -1,9 +1,7 @@
 package com.crm.qa.testcases;
 
 import com.crm.qa.base.TestBase;
-import com.crm.qa.pages.FeaturesPage;
-import com.crm.qa.pages.HomePage;
-import com.crm.qa.pages.LoginPage;
+import com.crm.qa.pages.*;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -17,6 +15,8 @@ public class LoginPageTest extends TestBase {
     LoginPage loginPage;
     HomePage homePage;
     FeaturesPage featuresPage;
+    SignUpPage signUpPage;
+    PricingPage pricingPage;
 
     public LoginPageTest() {
         super(); // colling constructor TestBase class
@@ -47,11 +47,27 @@ public class LoginPageTest extends TestBase {
         homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
     }
 
-    @Test(priority = 4)
+    @Test (priority = 4)
+    public void verifySignUpButton(){
+        signUpPage = loginPage.clickOnSignUpButton();
+    }
+
+   /* @Test(priority = 4)
     public void verifyFeaturesLink(){
         featuresPage = loginPage.clickOnFeaturesLink();
 
-    }
+    }*/
+
+  /*  @Test(priority = 5)
+    public void verifySignUpLink(){
+        signUpPage = loginPage.clickOnSignUpLink();
+
+    }*/
+    /*  @Test(priority = 5)
+      public void verifyPricingLink(){
+          pricingPage = loginPage.clickOnPricingLink();
+
+      }*/
 
     @AfterMethod
     public void tearDown (){

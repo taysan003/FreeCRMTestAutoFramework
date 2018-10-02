@@ -33,6 +33,15 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//div[@id='navbar-collapse']/ul[@class='nav navbar-nav navbar-right']//a[@href='https://www.freecrm.com/features.html']")
     WebElement featuresLink;
 
+    @FindBy(xpath = "//li/a/font [@color='red' and contains(text(), 'Sign Up')]")
+    WebElement signUpLink;
+
+    @FindBy(xpath = "//li/a [contains(text(), 'Pricing')]")
+    WebElement pricingLink;
+
+    @FindBy(xpath = "//div[@class='row']/div[1]/a[@role='button']")
+    WebElement signUpButton;
+
     //initializing of page objects
     public LoginPage() {
         PageFactory.initElements(driver, this); //initialization LoginPage class by driver and all FindBy elements
@@ -58,15 +67,39 @@ public class LoginPage extends TestBase {
     }
 
     public FeaturesPage clickOnFeaturesLink(){
-        //wait.until(ExpectedConditions.elementToBeClickable(featuresLink)).click();
-
-
 
         Actions act = new Actions(driver);
         act.moveToElement(featuresLink).perform();
         wait.until(ExpectedConditions.elementToBeClickable(featuresLink)).click();
-
-
         return new FeaturesPage();
+    }
+    public SignUpPage clickOnSignUpLink(){
+
+        Actions act = new Actions(driver);
+        act.moveToElement(signUpLink).perform();
+        //wait.until(ExpectedConditions.elementToBeClickable(signUpLink)).click();
+        //signUpLink.click();
+        boolean webElement = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//li/a/font [@color='red' and contains(text(), 'Sign Up')]")));
+        if(webElement==true)
+            signUpLink.click();
+        return new SignUpPage();
+    }
+
+    public PricingPage clickOnPricingLink(){
+
+        Actions act = new Actions(driver);
+        act.moveToElement(pricingLink).perform();
+        wait.until(ExpectedConditions.elementToBeClickable(pricingLink)).click();
+        return new PricingPage();
+    }
+
+    public SignUpPage clickOnSignUpButton(){
+
+       Actions act = new Actions(driver);
+        act.moveToElement(signUpButton).perform();
+        wait.until(ExpectedConditions.elementToBeClickable(signUpButton)).click();
+
+        //signUpButton.click();
+        return new SignUpPage();
     }
 }
