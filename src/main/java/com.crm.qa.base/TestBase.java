@@ -3,6 +3,7 @@ package com.crm.qa.base;
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -113,6 +114,8 @@ public class TestBase {
 
         driver.get(prop.getProperty("url"));
         log.info("enetering application URL");
-}
+    }
+
+
 
 }

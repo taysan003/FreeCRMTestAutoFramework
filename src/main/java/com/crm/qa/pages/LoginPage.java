@@ -3,11 +3,14 @@ package com.crm.qa.pages;
 import com.crm.qa.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.List;
 
 public class LoginPage extends TestBase {
 
@@ -60,6 +63,21 @@ public class LoginPage extends TestBase {
 
     @FindBy(xpath = "//div [@class='col-md-3 col-sm-6 margin']/i [@class='fa fa-mobile-phone skrollable skrollable-after']")
     WebElement getMobileLogo;
+
+    @FindBy(xpath = "//section[@id='services']/div[@class='container']/div/div[1]/p/small")
+    WebElement crmContactsText;
+
+    @FindBy(xpath = "//section[@id='services']/div[@class='container']/div/div[2]/p/small")
+    WebElement salesPielineText;
+
+    @FindBy(xpath = "//section[@id='services']/div[@class='container']/div/div[3]/p/small")
+    WebElement marketingAutomationText;
+
+    @FindBy(xpath = "//section[@id='services']/div[@class='container']/div/div[4]/p/small")
+    WebElement getMobileText;
+
+    @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170a.jpg']")
+    WebElement rpmcImage;
 
     //initializing of page objects
     public LoginPage() {
@@ -145,10 +163,8 @@ public class LoginPage extends TestBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
         wait.until(ExpectedConditions.visibilityOf(crmContactsLogo));
-        if (crmContactsLogo.isDisplayed())
-            return true;
-        else
-            return false;
+        return crmContactsLogo.isDisplayed();
+
     }
 
     public boolean validateSalesPipelineLogo(){
@@ -156,31 +172,55 @@ public class LoginPage extends TestBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
         wait.until(ExpectedConditions.visibilityOf(salesPielineLogo));
-        if (salesPielineLogo.isDisplayed())
-            return true;
-        else
-            return false;
+        return salesPielineLogo.isDisplayed();
+
     }
 
     public boolean validateMarketingAutomationLogo(){
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
-        wait.until(ExpectedConditions.visibilityOf(getMobileLogo));
-        if (getMobileLogo.isDisplayed())
-            return true;
-        else
-            return false;
+        wait.until(ExpectedConditions.visibilityOf(marketingAutomationLogo));
+        return marketingAutomationLogo.isDisplayed();
+
     }
 
     public boolean validateGetMobileLogo(){
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
-        wait.until(ExpectedConditions.visibilityOf(salesPielineLogo));
-        if (salesPielineLogo.isDisplayed())
-            return true;
-        else
-            return false;
+        wait.until(ExpectedConditions.visibilityOf(getMobileLogo));
+        return getMobileLogo.isDisplayed();
+
+    }
+
+    public boolean validateCrmContactsText(){
+
+        wait.until(ExpectedConditions.visibilityOf(crmContactsText));
+        return crmContactsText.isDisplayed();
+    }
+
+    public boolean validateSalesPipelineText(){
+
+        wait.until(ExpectedConditions.visibilityOf(salesPielineText));
+        return salesPielineText.isDisplayed();
+    }
+
+    public boolean validateMarketingAutoText(){
+
+        wait.until(ExpectedConditions.visibilityOf(marketingAutomationText));
+        return marketingAutomationText.isDisplayed();
+    }
+
+    public boolean validateGetMobileText(){
+
+        wait.until(ExpectedConditions.visibilityOf(getMobileText));
+        return getMobileText.isDisplayed();
+    }
+
+    public boolean validateRpmcImage(){
+
+        wait.until(ExpectedConditions.visibilityOf(rpmcImage));
+        return rpmcImage.isDisplayed();
     }
 }
