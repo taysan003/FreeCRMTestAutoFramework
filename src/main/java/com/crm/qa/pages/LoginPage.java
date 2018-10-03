@@ -87,29 +87,27 @@ public class LoginPage extends TestBase {
 
     public FeaturesPage clickOnFeaturesLink(){
 
-        Actions act = new Actions(driver);
-        act.moveToElement(featuresLink).perform();
-        wait.until(ExpectedConditions.elementToBeClickable(featuresLink)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(featuresLink));
+        JavascriptExecutor ex=(JavascriptExecutor)driver;
+        ex.executeScript("arguments[0].click()", featuresLink);
         return new FeaturesPage();
     }
     public SignUpPage clickOnSignUpLink(){
 
-        Actions act = new Actions(driver);
-        act.moveToElement(signUpLink).perform();
-        //wait.until(ExpectedConditions.elementToBeClickable(signUpLink)).click();
-        //signUpLink.click();
-        boolean webElement = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//li/a/font [@color='red' and contains(text(), 'Sign Up')]")));
-        if(webElement==true)
-            signUpLink.click();
-        return new SignUpPage();
+        wait.until(ExpectedConditions.elementToBeClickable(signUpLink));
+        JavascriptExecutor ex=(JavascriptExecutor)driver;
+        ex.executeScript("arguments[0].click()", signUpLink);
+        return new  SignUpPage();
+
     }
 
     public PricingPage clickOnPricingLink(){
 
-        Actions act = new Actions(driver);
-        act.moveToElement(pricingLink).perform();
-        wait.until(ExpectedConditions.elementToBeClickable(pricingLink)).click();
-        return new PricingPage();
+        wait.until(ExpectedConditions.elementToBeClickable(pricingLink));
+        JavascriptExecutor ex=(JavascriptExecutor)driver;
+        ex.executeScript("arguments[0].click()", pricingLink);
+        return new  PricingPage();
+
     }
 
     public SignUpPage clickOnSignUpButton_1(){

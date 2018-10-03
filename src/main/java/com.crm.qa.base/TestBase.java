@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -37,7 +39,8 @@ public class TestBase {
     public static WebDriverWait wait;
     public static ChromeOptions options;
     public static WebElement element;
-
+    public static FirefoxProfile testprofile;
+    public static DesiredCapabilities dc;
 
 
     public TestBase(){
@@ -73,6 +76,12 @@ public class TestBase {
                 driver = new ChromeDriver();
                 log.info("launching Chrome browser");
             } else if (browserName.equals("firefox")){
+                testprofile = new FirefoxProfile();
+                testprofile.setPreference("dom.webnotifications.enabled", false);
+                dc = DesiredCapabilities.firefox();
+                dc.setCapability(FirefoxDriver.PROFILE, testprofile);
+                FirefoxOptions opt = new FirefoxOptions();
+                opt.merge(dc);
                 driver = new FirefoxDriver();
                 /*capabilities = DesiredCapabilities.firefox();
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);*/
