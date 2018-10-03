@@ -1,16 +1,10 @@
 package com.crm.qa.pages;
-
 import com.crm.qa.base.TestBase;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import java.util.List;
 
 public class LoginPage extends TestBase {
 
@@ -78,6 +72,21 @@ public class LoginPage extends TestBase {
 
     @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170a.jpg']")
     WebElement rpmcImage;
+
+    @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170b.png']")
+    WebElement sofiImage;
+
+    @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170c.gif']")
+    WebElement ancellImage;
+
+    @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170d.jpg']")
+    WebElement uniColumbiaImage;
+
+    @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170g.jpg']")
+    WebElement cardsMadeEasyImage;
+
+    @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170h.gif']")
+    WebElement foyerImage;
 
     //initializing of page objects
     public LoginPage() {
@@ -222,5 +231,35 @@ public class LoginPage extends TestBase {
 
         wait.until(ExpectedConditions.visibilityOf(rpmcImage));
         return rpmcImage.isDisplayed();
+    }
+
+    public boolean validateSofiImage(){
+
+        wait.until(ExpectedConditions.visibilityOf(sofiImage));
+        return sofiImage.isDisplayed();
+    }
+
+    public boolean validateAncellImage(){
+
+        wait.until(ExpectedConditions.visibilityOf(ancellImage));
+        return ancellImage.isDisplayed();
+    }
+
+    public boolean validateUniColumbiaImage(){
+
+        wait.until(ExpectedConditions.visibilityOf(uniColumbiaImage));
+        return uniColumbiaImage.isDisplayed();
+    }
+
+    public boolean validateCardsMadeEasyImage(){
+
+        wait.until(ExpectedConditions.visibilityOf(cardsMadeEasyImage));
+        return cardsMadeEasyImage.isDisplayed();
+    }
+
+    public boolean validateFoyerImage(){
+
+        wait.until(ExpectedConditions.visibilityOf(foyerImage));
+        return foyerImage.isDisplayed();
     }
 }

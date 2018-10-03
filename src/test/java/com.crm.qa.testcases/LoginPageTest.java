@@ -144,6 +144,41 @@ public class LoginPageTest extends TestBase {
 
     }
 
+    @Test(priority = 21)
+    public void verifySofiImage(){
+        boolean flag =  loginPage.validateSofiImage();
+        Assert.assertTrue(flag);
+
+    }
+
+    @Test(priority = 22)
+    public void verifyAncellImage(){
+        boolean flag =  loginPage.validateAncellImage();
+        Assert.assertTrue(flag);
+
+    }
+
+    @Test(priority = 23)
+    public void verifyUniColumbiaImage(){
+        boolean flag =  loginPage.validateUniColumbiaImage();
+        Assert.assertTrue(flag);
+
+    }
+
+    @Test(priority = 23)
+    public void verifyCardsMadeEasyImage(){
+        boolean flag =  loginPage.validateCardsMadeEasyImage();
+        Assert.assertTrue(flag);
+
+    }
+
+    @Test(priority = 23)
+    public void verifyFoyerImage(){
+        boolean flag =  loginPage.validateFoyerImage();
+        Assert.assertTrue(flag);
+
+    }
+
     @AfterMethod
     public void tearDown (){
         driver.close(); // closing the browser
