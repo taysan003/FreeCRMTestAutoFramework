@@ -3,7 +3,6 @@ package com.crm.qa.pages;
 import com.crm.qa.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -52,6 +51,15 @@ public class LoginPage extends TestBase {
 
     @FindBy(xpath = "//i[@class='fa fa-users skrollable skrollable-after']")
     WebElement crmContactsLogo;
+
+    @FindBy(xpath = "//div[@class='col-md-3 col-sm-6 margin']/i [@class='fa fa-money skrollable skrollable-after']")
+    WebElement salesPielineLogo;
+
+    @FindBy(xpath = "//div [@class='col-md-3 col-sm-6 margin']/i [@class='fa fa-envelope skrollable skrollable-after']")
+    WebElement marketingAutomationLogo;
+
+    @FindBy(xpath = "//div [@class='col-md-3 col-sm-6 margin']/i [@class='fa fa-mobile-phone skrollable skrollable-after']")
+    WebElement getMobileLogo;
 
     //initializing of page objects
     public LoginPage() {
@@ -138,8 +146,41 @@ public class LoginPage extends TestBase {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
-
+        wait.until(ExpectedConditions.visibilityOf(crmContactsLogo));
         if (crmContactsLogo.isDisplayed())
+            return true;
+        else
+            return false;
+    }
+
+    public boolean validateSalesPipelineLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)");
+        wait.until(ExpectedConditions.visibilityOf(salesPielineLogo));
+        if (salesPielineLogo.isDisplayed())
+            return true;
+        else
+            return false;
+    }
+
+    public boolean validateMarketingAutomationLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)");
+        wait.until(ExpectedConditions.visibilityOf(getMobileLogo));
+        if (getMobileLogo.isDisplayed())
+            return true;
+        else
+            return false;
+    }
+
+    public boolean validateGetMobileLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)");
+        wait.until(ExpectedConditions.visibilityOf(salesPielineLogo));
+        if (salesPielineLogo.isDisplayed())
             return true;
         else
             return false;

@@ -36,7 +36,7 @@ public class LoginPageTest extends TestBase {
         Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
     }
 
-    @Test (priority = 2)
+    /*@Test (priority = 2)
     public void crmLogoImageTest(){
         boolean flag =loginPage.validateCRMImage();
         Assert.assertTrue(flag);
@@ -65,13 +65,33 @@ public class LoginPageTest extends TestBase {
     @Test (priority = 7)
     public void verifySignUpButton_4(){
         signUpPage = loginPage.clickOnSignUpButton_4();
-    }
+    }*/
 
     @Test (priority = 8)
     public void crmContactsLogoTest(){
         boolean flag =loginPage.validateCRMContactsLogo();
         Assert.assertTrue(flag);
     }
+
+    @Test (priority = 9)
+    public void salesPipelineLogoTest(){
+        boolean flag =loginPage.validateSalesPipelineLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 10)
+    public void marketingAutomationLogoTest(){
+        boolean flag =loginPage.validateMarketingAutomationLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 11)
+    public void getMobileLogoTest(){
+        boolean flag =loginPage.validateGetMobileLogo();
+        Assert.assertTrue(flag);
+    }
+
+
 
    /* @Test(priority = 4)
     public void verifyFeaturesLink(){
