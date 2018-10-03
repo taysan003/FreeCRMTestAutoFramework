@@ -88,6 +88,96 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//a/img [@src='https://d19rqa8v8yb76c.cloudfront.net/img/170h.gif']")
     WebElement foyerImage;
 
+    @FindBy(xpath = "//i [@class='fa fa-male fa-stack-1x fa-inverse']")
+    WebElement companiesContactsLogo;
+
+    @FindBy(xpath = "//div[@class='container']//div[1]/div[@class='row']/div[2]/p")
+    WebElement companiesContactsText;
+
+    @FindBy(xpath = "//div[@class='row']/div[2]/div[@class='row']/div[1]/span[@class='fa fa-stack']/i[2]")
+    WebElement marketingCompaignsLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[2]/div[@class='row']/div[2]/p/small")
+    WebElement marketingCompaignsText;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[1]/span[@class='fa fa-stack']/i[2]")
+    WebElement mobileIosAndrLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[2]/p/small")
+    WebElement mobileIosAndrText;
+
+    @FindBy(xpath = "//div[@class='row']/div[1]/div[@class='row']/div[3]/span[@class='fa-stack']/i[2]")
+    WebElement dealsSalesLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[1]/div[@class='row']/div[4]/p/small")
+    WebElement dealsSalesText;
+
+    @FindBy(xpath = "//div[2]/div[@class='row']/div[3]/span[@class='fa fa-stack']/i[2]")
+    WebElement taskEventLogo;
+
+    @FindBy(xpath = "//div[2]/div[@class='row']/div[3]/span[@class='fa fa-stack']/i[2]")
+    WebElement taskEventText;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[3]/span[@class='fa fa-stack']/i[2]")
+    WebElement groupCalendarLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[4]/p/small")
+    WebElement groupCalendarText;
+
+    @FindBy(xpath = "//div[@class='row']/div[1]/div[@class='row']/div[5]/span[@class='fa-stack']/i[2]")
+    WebElement callsVoiceLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[1]/div[@class='row']/div[6]/p/small")
+    WebElement callsVoiceText;
+
+    @FindBy(xpath = "//div[@class='row']/div[2]/div[@class='row']/div[5]/span[@class='fa fa-stack']/i[2]")
+    WebElement importExportLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[2]/div[@class='row']/div[6]/p/small")
+    WebElement importExportText;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[5]/span[@class='fa fa-stack']/i[2]")
+    WebElement documentsLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[6]/p/small")
+    WebElement documentsText;
+
+    @FindBy(xpath = "//section[@id='details']/div[@class='container']/div[@class='row']/div[1]/div[@class='row']/div[7]/span[@class='fa-stack']/i[@class='fa fa-circle fa-stack-2x skrollable skrollable-after']")
+    WebElement formsLogo;
+
+    @FindBy(xpath = "//div[@class='container']/div[@class='row']/div[1]/div[@class='row']/div[8]/p/small")
+    WebElement formsText;
+
+    @FindBy(xpath = "//div[@class='row']/div[2]/div[@class='row']/div[7]/span[@class='fa fa-stack']/i[2]")
+    WebElement printSmsLogo;
+
+    @FindBy(xpath = "//div[@class='container']/div[@class='row']/div[2]/div[@class='row']/div[8]/p/small")
+    WebElement printSmsText;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[7]/span[@class='fa fa-stack']/i[2]")
+    WebElement backUpSecurityLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[8]/p/small")
+    WebElement backUpSecurityText;
+
+    @FindBy(xpath = "//div[@class='row']/div[1]/div[@class='row']/div[9]/span[@class='fa-stack']/i[2]")
+    WebElement reportsLogo;
+
+    @FindBy(xpath = "//div[@class='container']/div[@class='row']/div[1]/div[@class='row']/div[10]/p/small")
+    WebElement reportsText;
+
+    @FindBy(xpath = "//div[@class='container']/div[@class='row']/div[2]/div[@class='row']/div[9]/span[@class='fa fa-stack']/i[2]")
+    WebElement alertsRemindersLogo;
+
+    @FindBy(xpath = "//div[@class='container']/div[@class='row']/div[2]/div[@class='row']/div[10]/p/small")
+    WebElement alertsRemindersText;
+
+    @FindBy(xpath = "//div[3]/div[@class='row']/div[9]/span[@class='fa fa-stack']/i[2]")
+    WebElement customerSupportLogo;
+
+    @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[10]/p/small")
+    WebElement customerSupportText;
+
     //initializing of page objects
     public LoginPage() {
         PageFactory.initElements(driver, this); //initialization LoginPage class by driver and all FindBy elements
@@ -262,4 +352,230 @@ public class LoginPage extends TestBase {
         wait.until(ExpectedConditions.visibilityOf(foyerImage));
         return foyerImage.isDisplayed();
     }
+
+    public boolean validateCompaniesContactsLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(companiesContactsLogo));
+        return companiesContactsLogo.isDisplayed();
+
+    }
+
+    public boolean validateCompaniesContactsText(){
+
+        wait.until(ExpectedConditions.visibilityOf(crmContactsText));
+        return crmContactsText.isDisplayed();
+    }
+
+    public boolean validateMarketingCompaignsLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(marketingCompaignsLogo));
+        return marketingCompaignsLogo.isDisplayed();
+
+    }
+
+    public boolean validateMarketingCompaignsText(){
+
+        wait.until(ExpectedConditions.visibilityOf(marketingCompaignsText));
+        return marketingCompaignsText.isDisplayed();
+    }
+
+    public boolean validateMobileIosAndrLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(mobileIosAndrLogo));
+        return mobileIosAndrLogo.isDisplayed();
+
+    }
+
+    public boolean validateMobileIosAndrText(){
+
+        wait.until(ExpectedConditions.visibilityOf(mobileIosAndrText));
+        return mobileIosAndrText.isDisplayed();
+    }
+
+    public boolean validateDealsSalesLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(dealsSalesLogo));
+        return dealsSalesLogo.isDisplayed();
+
+    }
+
+    public boolean validateDealsSalesText(){
+
+        wait.until(ExpectedConditions.visibilityOf(dealsSalesText));
+        return dealsSalesText.isDisplayed();
+    }
+
+    public boolean validateTaskEventLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(taskEventLogo));
+        return taskEventLogo.isDisplayed();
+
+    }
+
+    public boolean validateTaskEventText(){
+
+        wait.until(ExpectedConditions.visibilityOf(taskEventText));
+        return taskEventText.isDisplayed();
+    }
+
+    public boolean validateGroupCalendarLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(groupCalendarLogo));
+        return groupCalendarLogo.isDisplayed();
+
+    }
+
+    public boolean validateGroupCalendarText(){
+
+        wait.until(ExpectedConditions.visibilityOf(groupCalendarText));
+        return groupCalendarText.isDisplayed();
+    }
+
+    public boolean validateCallsVoiceLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(callsVoiceLogo));
+        return callsVoiceLogo.isDisplayed();
+
+    }
+
+    public boolean validateCallsVoiceText(){
+
+        wait.until(ExpectedConditions.visibilityOf(callsVoiceText));
+        return callsVoiceText.isDisplayed();
+    }
+
+    public boolean validateImportExportLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(importExportLogo));
+        return importExportLogo.isDisplayed();
+
+    }
+
+    public boolean validateImportExporText(){
+
+        wait.until(ExpectedConditions.visibilityOf(importExportText));
+        return importExportText.isDisplayed();
+    }
+
+    public boolean validateDocumentsLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(documentsLogo));
+        return documentsLogo.isDisplayed();
+
+    }
+
+    public boolean validateDocumentsText(){
+
+        wait.until(ExpectedConditions.visibilityOf(documentsText));
+        return documentsText.isDisplayed();
+    }
+
+    public boolean validateFormsLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(formsLogo));
+        return formsLogo.isDisplayed();
+
+    }
+
+    public boolean validateFormsText(){
+
+        wait.until(ExpectedConditions.visibilityOf(formsText));
+        return formsText.isDisplayed();
+    }
+
+    public boolean validatePrintSMSLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(printSmsLogo));
+        return printSmsLogo.isDisplayed();
+
+    }
+
+    public boolean validatePrintSMSText(){
+
+        wait.until(ExpectedConditions.visibilityOf(printSmsText));
+        return printSmsText.isDisplayed();
+    }
+
+    public boolean validateBackUpSecurityLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(backUpSecurityLogo));
+        return backUpSecurityLogo.isDisplayed();
+
+    }
+
+    public boolean validateBackUpSecurityText(){
+
+        wait.until(ExpectedConditions.visibilityOf(backUpSecurityText));
+        return backUpSecurityText.isDisplayed();
+    }
+
+    public boolean validateReportsLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(reportsLogo));
+        return reportsLogo.isDisplayed();
+
+    }
+
+    public boolean validateReportsText(){
+
+        wait.until(ExpectedConditions.visibilityOf(reportsText));
+        return reportsText.isDisplayed();
+    }
+
+    public boolean validateAlertsRemindresLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(alertsRemindersLogo));
+        return alertsRemindersLogo.isDisplayed();
+
+    }
+
+    public boolean validateAlertsRemindresText(){
+
+        wait.until(ExpectedConditions.visibilityOf(alertsRemindersText));
+        return alertsRemindersText.isDisplayed();
+    }
+
+    public boolean validateCustomerSupportLogo(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)");
+        wait.until(ExpectedConditions.visibilityOf(customerSupportLogo));
+        return customerSupportLogo.isDisplayed();
+
+    }
+
+    public boolean validateCustomerSupportText(){
+
+        wait.until(ExpectedConditions.visibilityOf(customerSupportText));
+        return customerSupportText.isDisplayed();
+    }
+
 }

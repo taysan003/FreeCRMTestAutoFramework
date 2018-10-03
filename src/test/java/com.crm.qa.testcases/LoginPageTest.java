@@ -36,7 +36,7 @@ public class LoginPageTest extends TestBase {
         Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
     }
 
-    /*@Test (priority = 2)
+    @Test (priority = 2)
     public void crmLogoImageTest(){
         boolean flag =loginPage.validateCRMImage();
         Assert.assertTrue(flag);
@@ -108,8 +108,8 @@ public class LoginPageTest extends TestBase {
           pricingPage = loginPage.clickOnPricingLink();
 
       }
-*/
-     /* @Test(priority = 15)
+
+     @Test(priority = 15)
       public void verifyCrmContactsText(){
           boolean flag =  loginPage.validateCrmContactsText();
           Assert.assertTrue(flag);
@@ -135,7 +135,7 @@ public class LoginPageTest extends TestBase {
         boolean flag =  loginPage.validateGetMobileText();
         Assert.assertTrue(flag);
 
-    }*/
+    }
 
     @Test(priority = 20)
     public void verifyRpmcImage(){
@@ -165,18 +165,197 @@ public class LoginPageTest extends TestBase {
 
     }
 
-    @Test(priority = 23)
+    @Test(priority = 24)
     public void verifyCardsMadeEasyImage(){
         boolean flag =  loginPage.validateCardsMadeEasyImage();
         Assert.assertTrue(flag);
 
     }
 
-    @Test(priority = 23)
+    @Test(priority = 25)
     public void verifyFoyerImage(){
         boolean flag =  loginPage.validateFoyerImage();
         Assert.assertTrue(flag);
 
+    }
+    @Test (priority = 26)
+    public void verifyVompaniesContactsLogoTest(){
+        boolean flag = loginPage.validateCompaniesContactsLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 27)
+    public void verifyCompaniesContactsTextTest(){
+        boolean flag = loginPage.validateCompaniesContactsText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 28)
+    public void verifyMarketingCampaignsLogoTest(){
+        boolean flag = loginPage.validateMarketingCompaignsLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 29)
+    public void verifyMarketingCampaignsTexstTest(){
+        boolean flag = loginPage.validateMarketingCompaignsText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 30)
+    public void verifyMobileIosAndrLogoTest(){
+        boolean flag = loginPage.validateMobileIosAndrLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 31)
+    public void verifyMobileIosAndrTextTest(){
+        boolean flag = loginPage.validateMobileIosAndrText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 32)
+    public void verifyDealsSalesLogoTest(){
+        boolean flag = loginPage.validateDealsSalesLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 33)
+    public void verifyDealesSalesTextTest(){
+        boolean flag = loginPage.validateDealsSalesText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 34)
+    public void verifyTaskEventLogoTest(){
+        boolean flag = loginPage.validateTaskEventLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 35)
+    public void verifyTaskEventTextTest(){
+        boolean flag = loginPage.validateDealsSalesText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 36)
+    public void verifyGroupCalendarLogoTest(){
+        boolean flag = loginPage.validateGroupCalendarLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 37)
+    public void verifyGroupCalendarTextTest(){
+        boolean flag = loginPage.validateGroupCalendarText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 38)
+    public void verifyCallsVoiceLogoTest(){
+        boolean flag = loginPage.validateCallsVoiceLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 38)
+    public void verifyCallsVoiceTextTest(){
+        boolean flag = loginPage.validateCallsVoiceText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 39)
+    public void verifyImportExportLogoTest(){
+        boolean flag = loginPage.validateImportExportLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 40)
+    public void verifyImportExportTextTest(){
+        boolean flag = loginPage.validateImportExporText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 41)
+    public void verifyDocumentsLogoTest(){
+        boolean flag = loginPage.validateDocumentsLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 42)
+    public void verifyDocumentsTextTest(){
+        boolean flag = loginPage.validateDocumentsText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 43)
+    public void verifyFormsLogoTest(){
+        boolean flag = loginPage.validateFormsLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 44)
+    public void verifyFormsTextTest(){
+        boolean flag = loginPage.validateFormsText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 45)
+    public void verifyPrintSMSLogoTest(){
+        boolean flag = loginPage.validatePrintSMSLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 46)
+    public void verifyPrintSMSTextTest(){
+        boolean flag = loginPage.validatePrintSMSText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 47)
+    public void verifyBackUpSecurityLogoTest(){
+        boolean flag = loginPage.validateBackUpSecurityLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 48)
+    public void verifyBackUpSecurityTextTest(){
+        boolean flag = loginPage.validateBackUpSecurityText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 49)
+    public void verifyReportsLogoTest(){
+        boolean flag = loginPage.validateReportsLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 50)
+    public void verifyReportsTextTest(){
+        boolean flag = loginPage.validateReportsText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 51)
+    public void verifyAlertsRemindersLogoTest(){
+        boolean flag = loginPage.validateAlertsRemindresLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 52)
+    public void verifyAlertsRemindersTextTest(){
+        boolean flag = loginPage.validateReportsText();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 53)
+    public void verifyCustomerSupportLogoTest(){
+        boolean flag = loginPage.validateCustomerSupportLogo();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 54)
+    public void verifyCustomerSupportTextTest(){
+        boolean flag = loginPage.validateCustomerSupportText();
+        Assert.assertTrue(flag);
     }
 
     @AfterMethod
