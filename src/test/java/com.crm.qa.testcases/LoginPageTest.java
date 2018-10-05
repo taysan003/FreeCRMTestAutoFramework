@@ -36,11 +36,11 @@ public class LoginPageTest extends TestBase {
         Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
     }
 
-    @Test (priority = 2)
+   /* @Test (priority = 2)
     public void crmLogoImageTest(){
         boolean flag =loginPage.validateCRMImage();
         Assert.assertTrue(flag);
-    }
+    }*/
 /*
     @Test (priority = 3)
     public void loginTest() throws InterruptedException {
@@ -359,7 +359,7 @@ public class LoginPageTest extends TestBase {
         Assert.assertTrue(flag);
     }
 */
-    @Test (priority = 55)
+   /* @Test (priority = 55)
     public void verifyFreeCRMTextTest(){
         String str = loginPage.validateFreeCRMText();
         Assert.assertEquals(str, "#1 Free CRM software in the cloud for sales and service");
@@ -371,10 +371,16 @@ public class LoginPageTest extends TestBase {
         Assert.assertTrue(flag);
     }
 
-    @Test (priority = 56)
+    @Test (priority = 57)
     public void verifyTurnLeftSign(){
         boolean flag = loginPage.validateTurnLeftSign();
         Assert.assertTrue(flag);
+    }*/
+
+    @Test (priority = 58)
+    public void verifyFreeCRMTSoftText(){
+        String str = loginPage.validateFreeCRMSoftwareText();
+        Assert.assertEquals(str, "Free CRM software in the cloud powers sales and customer serviceCRM");
     }
 
     @AfterMethod

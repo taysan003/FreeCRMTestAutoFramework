@@ -188,6 +188,9 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//i [@class='fa fa-chevron-left']")
     WebElement turnLeftSign;
 
+    @FindBy(xpath = "//div[@id='carousel_intro']/div/div[2]/h1[@class='skrollable skrollable-between']")
+    WebElement freeCRMsoftTextScroll_1;
+
     //initializing of page objects
     public LoginPage() {
         PageFactory.initElements(driver, this); //initialization LoginPage class by driver and all FindBy elements
@@ -608,6 +611,15 @@ public class LoginPage extends TestBase {
 
         wait.until(ExpectedConditions.elementToBeClickable(turnLeftSign));
         return turnLeftSign.isEnabled();
+    }
+
+    public String validateFreeCRMSoftwareText(){
+        wait.until(ExpectedConditions.elementToBeClickable(turnRigtSign));
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", turnRigtSign);
+        wait.until(ExpectedConditions.visibilityOf(freeCRMsoftTextScroll_1));
+        String str = freeCRMsoftTextScroll_1.getText();
+        return str;
     }
 
 }
