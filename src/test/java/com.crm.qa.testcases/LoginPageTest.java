@@ -367,7 +367,13 @@ public class LoginPageTest extends TestBase {
 
     @Test (priority = 56)
     public void verifyTurnRightSign(){
-        boolean flag = loginPage.validateDocumentsText();
+        boolean flag = loginPage.validateTurnRightSign();
+        Assert.assertTrue(flag);
+    }
+
+    @Test (priority = 56)
+    public void verifyTurnLeftSign(){
+        boolean flag = loginPage.validateTurnLeftSign();
         Assert.assertTrue(flag);
     }
 

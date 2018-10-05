@@ -185,6 +185,9 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//i [@class='fa fa-chevron-right']")
     WebElement turnRigtSign;
 
+    @FindBy(xpath = "//i [@class='fa fa-chevron-left']")
+    WebElement turnLeftSign;
+
     //initializing of page objects
     public LoginPage() {
         PageFactory.initElements(driver, this); //initialization LoginPage class by driver and all FindBy elements
@@ -599,6 +602,12 @@ public class LoginPage extends TestBase {
 
         wait.until(ExpectedConditions.elementToBeClickable(turnRigtSign));
         return turnRigtSign.isEnabled();
+    }
+
+    public boolean validateTurnLeftSign(){
+
+        wait.until(ExpectedConditions.elementToBeClickable(turnLeftSign));
+        return turnLeftSign.isEnabled();
     }
 
 }
