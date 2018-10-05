@@ -365,6 +365,12 @@ public class LoginPageTest extends TestBase {
         Assert.assertEquals(str, "#1 Free CRM software in the cloud for sales and service");
     }
 
+    @Test (priority = 56)
+    public void verifyTurnRightSign(){
+        boolean flag = loginPage.validateDocumentsText();
+        Assert.assertTrue(flag);
+    }
+
     @AfterMethod
     public void tearDown (){
         driver.close(); // closing the browser

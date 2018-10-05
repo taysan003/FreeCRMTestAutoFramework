@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="17988bdc-625e-4fe9-83c7-52af045c967e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Extent.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,7 +34,7 @@
         <counts>
           <entry key="dummy" value="4" />
           <entry key="gitignore" value="11" />
-          <entry key="java" value="7475" />
+          <entry key="java" value="7572" />
           <entry key="properties" value="84" />
           <entry key="xml" value="402" />
         </counts>
@@ -47,7 +42,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="11" />
-          <entry key="JAVA" value="7475" />
+          <entry key="JAVA" value="7572" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="84" />
           <entry key="XML" value="402" />
@@ -86,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="365" column="34" lean-forward="true" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
+            <state relative-caret-position="258">
+              <caret line="368" column="30" selection-start-line="368" selection-start-column="30" selection-end-line="368" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#533#534#0" expanded="true" />
@@ -127,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="587" column="28" lean-forward="true" selection-start-line="587" selection-start-column="28" selection-end-line="587" selection-end-column="28" />
+            <state relative-caret-position="337">
+              <caret line="598" lean-forward="true" selection-start-line="598" selection-end-line="598" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,7 +174,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -265,8 +260,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="323" />
-    <option name="width" value="1545" />
+    <option name="x" value="216" />
+    <option name="y" value="187" />
+    <option name="width" value="1707" />
     <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -400,7 +396,7 @@
   <component name="PropertiesComponent">
     <property name="add_unversioned_files" value="$PROJECT_DIR$/application.log&#10;true&#10;G:/SeleniumProjects/FreeCRMTestFramework/screenshots/1538024593568.png" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538698065553" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538698881272" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
@@ -571,12 +567,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 01h 59m 01s.xml">
-      <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 00m 23s.xml">
-      <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 01m 20s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -601,6 +591,12 @@
     <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 14m 47s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 20h 07m 02s.xml">
+      <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 20h 07m 58s.xml">
+      <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -612,10 +608,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="323" y="0" width="1545" height="1031" extended-state="0" />
-    <editor active="true" />
+    <frame x="216" y="187" width="1707" height="1031" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.862256" visible="true" weight="0.22020201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.862256" visible="true" weight="0.1985428" />
       <window_info id="Structure" order="1" sideWeight="0.1434263" side_tool="true" weight="0.24381188" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -624,22 +619,22 @@
       <window_info id="Favorites" order="6" sideWeight="0.13774404" side_tool="true" weight="0.21002132" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36659437" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5295429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.48481563" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3679115" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36789298" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.28958786" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.28874025" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.1023569" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.09228901" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -887,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/TaskPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -913,8 +901,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="587" column="28" lean-forward="true" selection-start-line="587" selection-start-column="28" selection-end-line="587" selection-end-column="28" />
+        <state relative-caret-position="337">
+          <caret line="598" lean-forward="true" selection-start-line="598" selection-end-line="598" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -923,13 +911,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="365" column="34" lean-forward="true" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
+        <state relative-caret-position="258">
+          <caret line="368" column="30" selection-start-line="368" selection-start-column="30" selection-end-line="368" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#533#534#0" expanded="true" />
             <element signature="e#594#595#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>

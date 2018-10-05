@@ -182,6 +182,9 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//h1 [@class='skrollable skrollable-between' and contains(text(),'#1 Free CRM software in the cloud for sales and service')]")
     WebElement freeCRMText;
 
+    @FindBy(xpath = "//i [@class='fa fa-chevron-right']")
+    WebElement turnRigtSign;
+
     //initializing of page objects
     public LoginPage() {
         PageFactory.initElements(driver, this); //initialization LoginPage class by driver and all FindBy elements
@@ -590,6 +593,12 @@ public class LoginPage extends TestBase {
         wait.until(ExpectedConditions.visibilityOf(freeCRMText));
         String str = freeCRMText.getText();
         return str;
+    }
+
+    public boolean validateTurnRightSign(){
+
+        wait.until(ExpectedConditions.elementToBeClickable(turnRigtSign));
+        return turnRigtSign.isEnabled();
     }
 
 }
