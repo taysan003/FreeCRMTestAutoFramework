@@ -17,7 +17,7 @@ public class HomePageTest extends TestBase {
 
     LoginPage loginPage;
     HomePage homePage;
-    TestUtil testUtil;
+   // TestUtil testUtil;
     ContactsPage contactsPage;
 
     public HomePageTest() {
@@ -30,7 +30,7 @@ public class HomePageTest extends TestBase {
     // after each test case --- close the browser
     @BeforeMethod
     @Parameters({"browser"})
-    public void setUp(String browser) throws MalformedURLException {
+    public void setUp(String browser) throws MalformedURLException, InterruptedException {
         initialization(browser);  //colling driver and go to login page
         testUtil = new TestUtil();
         contactsPage = new ContactsPage();

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="17988bdc-625e-4fe9-83c7-52af045c967e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Extent.html" afterDir="false" />
     </list>
@@ -19,22 +23,23 @@
     <session id="1054996723">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="4" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
           <entry key="gitignore" value="11" />
-          <entry key="java" value="7144" />
+          <entry key="java" value="7475" />
           <entry key="properties" value="84" />
           <entry key="xml" value="402" />
         </counts>
@@ -42,7 +47,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="11" />
-          <entry key="JAVA" value="7144" />
+          <entry key="JAVA" value="7475" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="84" />
           <entry key="XML" value="402" />
@@ -54,11 +59,11 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="103" />
+          <entry key="java" value="124" />
           <entry key="log" value="3" />
           <entry key="png" value="5" />
           <entry key="properties" value="9" />
-          <entry key="xml" value="17" />
+          <entry key="xml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -68,10 +73,10 @@
           <entry key="HTML" value="4" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="103" />
+          <entry key="JAVA" value="124" />
           <entry key="Log" value="3" />
           <entry key="Properties" value="9" />
-          <entry key="XML" value="17" />
+          <entry key="XML" value="18" />
         </counts>
       </usages-collector>
     </session>
@@ -84,32 +89,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="359" lean-forward="true" selection-start-line="359" selection-end-line="359" />
+            <state relative-caret-position="475">
+              <caret line="365" column="34" lean-forward="true" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#533#534#0" expanded="true" />
                 <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1542#1543#0" expanded="true" />
-                <element signature="e#1604#1605#0" expanded="true" />
-                <element signature="e#1670#1671#0" expanded="true" />
-                <element signature="e#1732#1733#0" expanded="true" />
-                <element signature="e#1798#1799#0" expanded="true" />
-                <element signature="e#1860#1861#0" expanded="true" />
-                <element signature="e#1926#1927#0" expanded="true" />
-                <element signature="e#1988#1989#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="118" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="576">
+              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state relative-caret-position="552">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="577" column="34" selection-start-line="577" selection-start-column="34" selection-end-line="577" selection-end-column="34" />
+            <state relative-caret-position="523">
+              <caret line="587" column="28" lean-forward="true" selection-start-line="587" selection-start-column="28" selection-end-line="587" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,16 +137,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/HomePage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="728">
+              <caret line="112" column="43" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/ContactPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding>
+                <element signature="e#872#873#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/SignUpPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/SupportPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
               <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
@@ -160,34 +180,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/ContactsPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-              <folding>
-                <element signature="e#877#878#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng_sanity.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="64" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="12" selection-end-column="64" />
+            <state relative-caret-position="360">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -229,16 +225,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com.crm.qa.config/configFireFox.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com.crm.qa.config/configIE.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.crm.qa.config/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/FeaturesPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/PricingPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/CustomresPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/ContactPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/SupportPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java" />
@@ -269,10 +265,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="82" />
-    <option name="width" value="1891" />
-    <option name="height" value="857" />
+    <option name="x" value="323" />
+    <option name="width" value="1545" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -398,14 +393,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="add_unversioned_files" value="$PROJECT_DIR$/application.log&#10;true&#10;G:/SeleniumProjects/FreeCRMTestFramework/screenshots/1538024593568.png" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538549647650" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538698065553" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
@@ -576,34 +571,34 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 00h 19m 39s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 01h 59m 01s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 00h 22m 55s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 00m 23s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 00h 26m 45s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 01m 20s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 00h 36m 38s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 02m 07s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 00h 56m 51s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 04m 08s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 01h 12m 45s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 05m 13s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 01h 19m 40s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 06m 24s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 02h 01m 41s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 07m 17s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 02h 04m 35s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 12m 10s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.03 at 02h 54m 12s.xml">
+    <history-entry file="G__SeleniumProjects_FreeCRMTestFramework_src_main_resources_testng_xml - 2018.10.04 at 02h 14m 47s.xml">
       <configuration name="G:/SeleniumProjects/FreeCRMTestFramework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -617,10 +612,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="82" width="1891" height="857" extended-state="0" />
+    <frame x="323" y="0" width="1545" height="1031" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.862256" visible="true" weight="0.23593664" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.862256" visible="true" weight="0.22020201" />
       <window_info id="Structure" order="1" sideWeight="0.1434263" side_tool="true" weight="0.24381188" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -629,22 +624,22 @@
       <window_info id="Favorites" order="6" sideWeight="0.13774404" side_tool="true" weight="0.21002132" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2614108" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36659437" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.48481563" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23651452" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3679115" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.29045644" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.28958786" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.08301475" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.1023569" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -767,45 +762,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/SupportPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/FeaturesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/DealsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/CustomresPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -823,64 +783,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/PricingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#921#922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/Extent.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng_sanity.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/TaskPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -893,38 +802,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/ContactsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-          <folding>
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="518">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/CustomresPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="96">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/DealsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/FeaturesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/PricingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/HomePageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/ContactsPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.crm.qa.util/TestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/SupportPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="64" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="12" selection-end-column="64" />
+        <state relative-caret-position="360">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/TaskPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.crm.qa.base/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="112" column="43" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="577" column="34" selection-start-line="577" selection-start-column="34" selection-end-line="577" selection-end-column="34" />
+        <state relative-caret-position="523">
+          <caret line="587" column="28" lean-forward="true" selection-start-line="587" selection-start-column="28" selection-end-line="587" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -933,22 +923,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com.crm.qa.testcases/LoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="359" lean-forward="true" selection-start-line="359" selection-end-line="359" />
+        <state relative-caret-position="475">
+          <caret line="365" column="34" lean-forward="true" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#533#534#0" expanded="true" />
             <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1604#1605#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1988#1989#0" expanded="true" />
           </folding>
         </state>
       </provider>

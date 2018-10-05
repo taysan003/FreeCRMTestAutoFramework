@@ -27,7 +27,7 @@ public class ContactsPageTest extends TestBase {
 
     @BeforeMethod
     @Parameters({"browser"})
-    public void setUp(String browser) throws MalformedURLException {
+    public void setUp(String browser) throws MalformedURLException, InterruptedException {
         initialization(browser);  //colling driver and go to login page
         testUtil = new TestUtil();
         contactsPage = new ContactsPage();

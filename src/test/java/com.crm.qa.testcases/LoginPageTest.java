@@ -24,13 +24,13 @@ public class LoginPageTest extends TestBase {
 
     @BeforeMethod
     @Parameters({"browser"})
-    public void setUp(String  browser) throws MalformedURLException {
+    public void setUp(String  browser) throws MalformedURLException, InterruptedException {
         initialization(browser);  //colling driver and go to login page
         loginPage = new LoginPage(); // fill in specified field necessary data login and password
     }
 
     @Test(priority = 1)
-    public void loginPageTitleTest(){
+    public void loginPageTitleTest() throws InterruptedException {
         String title = loginPage.validateLoginPageTitle();
         log.info("login page title is ---> " + title);
         Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
@@ -41,16 +41,17 @@ public class LoginPageTest extends TestBase {
         boolean flag =loginPage.validateCRMImage();
         Assert.assertTrue(flag);
     }
-
+/*
     @Test (priority = 3)
-    public void loginTest(){
+    public void loginTest() throws InterruptedException {
         homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
     }
 
     @Test (priority = 4)
     public void verifySignUpButton_1(){
         signUpPage = loginPage.clickOnSignUpButton_1();
-    }
+    }*/
+/*
 
     @Test (priority = 5)
     public void verifySignUpButton_2(){
@@ -356,6 +357,12 @@ public class LoginPageTest extends TestBase {
     public void verifyCustomerSupportTextTest(){
         boolean flag = loginPage.validateCustomerSupportText();
         Assert.assertTrue(flag);
+    }
+*/
+    @Test (priority = 55)
+    public void verifyFreeCRMTextTest(){
+        String str = loginPage.validateFreeCRMText();
+        Assert.assertEquals(str, "#1 Free CRM software in the cloud for sales and service");
     }
 
     @AfterMethod

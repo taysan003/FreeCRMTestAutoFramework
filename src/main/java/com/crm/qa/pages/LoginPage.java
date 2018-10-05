@@ -1,5 +1,6 @@
 package com.crm.qa.pages;
 import com.crm.qa.base.TestBase;
+import com.crm.qa.util.TestUtil;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -178,6 +179,9 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//div[@class='row']/div[3]/div[@class='row']/div[10]/p/small")
     WebElement customerSupportText;
 
+    @FindBy(xpath = "//h1 [@class='skrollable skrollable-between' and contains(text(),'#1 Free CRM software in the cloud for sales and service')]")
+    WebElement freeCRMText;
+
     //initializing of page objects
     public LoginPage() {
         PageFactory.initElements(driver, this); //initialization LoginPage class by driver and all FindBy elements
@@ -192,12 +196,15 @@ public class LoginPage extends TestBase {
        return crmLogo.isDisplayed();
     }
 
-    public HomePage login(String un, String pwd){
+    public HomePage login(String un, String pwd) throws InterruptedException {
         username.clear();
         username.sendKeys(un);
         password.clear();
         password.sendKeys(pwd);
+       // testUtil.switchToFrameChat();
+       // Thread.sleep(10000);
         loginBtn.submit();
+
 
         return new HomePage();
     }
@@ -576,6 +583,13 @@ public class LoginPage extends TestBase {
 
         wait.until(ExpectedConditions.visibilityOf(customerSupportText));
         return customerSupportText.isDisplayed();
+    }
+
+    public String validateFreeCRMText(){
+
+        wait.until(ExpectedConditions.visibilityOf(freeCRMText));
+        String str = freeCRMText.getText();
+        return str;
     }
 
 }

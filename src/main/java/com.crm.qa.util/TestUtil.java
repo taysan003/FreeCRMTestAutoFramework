@@ -29,6 +29,10 @@ public class TestUtil extends TestBase {
       driver.switchTo().frame("mainpanel");
    }
 
+   public void switchToFrameChat(){
+      driver.switchTo().frame("intercom-messenger-frame");
+   }
+
    public static Object[][] getTestData(String sheetName) {
       FileInputStream file = null;
       try {
